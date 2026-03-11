@@ -3,26 +3,30 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-bg-cream: #F5E6D3;
+  --color-text-brown: #4A3A2A;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-html {
-  scroll-behavior: smooth;
-  background: #F5E6D3 !important;
-}
+  html {
+    scroll-behavior: smooth;
+    background-color: #F5E6D3;
+  }
 
-body {
-  background: #F5E6D3 !important;
-  color: #4A3A2A !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.8;
-  overflow-x: hidden;
+  body {
+    background-color: #F5E6D3;
+    color: #4A3A2A;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
 }
 
 :root {
